@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "start_container",
+            "type": "shell",
+            // "command": "docker-compose run -d -p 5678:5678 -p 8000:8000 --rm app sh -c 'DJANGO_DEBUGGER=True python -m ptvsd --host 0.0.0.0 --port 5678 --wait manage.py runserver --noreload 0.0.0.0:8000';sleep 5"
+            "command": "docker-compose -f docker-compose.yml -f docker-compose.debug.yml up",
+            "windows": {
+                "command": ""
+            }
+        },
+        {
+            "label": "stop_container",
+            "type": "shell",
+            "command": "docker-compose down",
+        }
+    ]
+}

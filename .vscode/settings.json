@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\l.stylianou\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
+    "python.pythonPath": "C:\\Users\\l.stylianou\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
 }
